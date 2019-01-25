@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lava: MonoBehaviour
+public class Lava : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject[] players;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform != player.transform) return;
-        
-        var health = player.GetComponent<Health>();
-        health.Kill();
+        foreach (var player in players)
+        {
+            if (other.transform != player.transform) continue;
+            var health = player.GetComponent<Health>();
+            health.Kill();
+        }
     }
 }
