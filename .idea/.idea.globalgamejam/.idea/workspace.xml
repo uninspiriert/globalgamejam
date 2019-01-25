@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3323bfa-3bc4-433d-b57a-ee980a188e66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,30 +12,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1172696191">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="160" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="160" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+            <state relative-caret-position="2000">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
-                <marker date="1548450645440" expanded="true" signature="6:63" ph="..." />
-                <marker date="1548450645440" expanded="true" signature="115:5130" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="1585:1597" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="1692:1915" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="1947:2505" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="2027:2240" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-                <marker date="1548450645440" expanded="true" signature="2564:4951" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="2579:3023" ph="/* If crouching, check to see if the character can stand up ... */" />
-                <marker date="1548450645440" expanded="true" signature="3060:4817" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="3122:3590" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="3172:3298" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="3607:3966" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="3824:3952" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="4478:4570" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="4715:4807" ph="{...}" />
-                <marker date="1548450645440" expanded="true" signature="4977:5128" ph="{...}" />
+                <marker date="1548455866344" expanded="true" signature="6:127" ph="..." />
+                <marker date="1548455866344" expanded="true" signature="165:354" ph="{...}" />
+                <marker date="1548455866344" expanded="true" signature="194:284" ph="{...}" />
+                <marker date="1548455866344" expanded="true" signature="312:352" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,15 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MoveScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="400">
               <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding>
-                <marker date="1548445927981" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548445927981" expanded="true" signature="119:602" ph="{...}" />
-                <marker date="1548445927981" expanded="true" signature="292:455" ph="{...}" />
-                <marker date="1548445927981" expanded="true" signature="410:447" ph="{...}" />
-                <marker date="1548445927981" expanded="true" signature="487:600" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -61,14 +73,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -77,10 +91,17 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="980" />
-    <option name="height" value="1047" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
+    <option name="y" value="23" />
+    <option name="width" value="840" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -104,11 +125,11 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,17 +154,19 @@
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -157,11 +180,12 @@
       <updated>1548442694601</updated>
       <workItem from="1548442699863" duration="179000" />
       <workItem from="1548442918987" duration="6460000" />
+      <workItem from="1548455603511" duration="262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6639000" />
+    <option name="totallyTimeSpent" value="6901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,16 +197,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25062656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Captures" order="5" />
-      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -198,8 +221,9 @@
       <window_info anchor="bottom" id="NuGet" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="13" />
       <window_info anchor="bottom" id="Unit Tests" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="16" />
+      <window_info anchor="bottom" id="Unity" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -215,6 +239,9 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -226,48 +253,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/MoveScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/MoveScript.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="2000">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MoveScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="400">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <marker date="1548445927981" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548445927981" expanded="true" signature="119:602" ph="{...}" />
-            <marker date="1548445927981" expanded="true" signature="292:455" ph="{...}" />
-            <marker date="1548445927981" expanded="true" signature="410:447" ph="{...}" />
-            <marker date="1548445927981" expanded="true" signature="487:600" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+        <state relative-caret-position="160">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
-            <marker date="1548450645440" expanded="true" signature="6:63" ph="..." />
-            <marker date="1548450645440" expanded="true" signature="115:5130" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="1585:1597" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="1692:1915" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="1947:2505" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="2027:2240" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-            <marker date="1548450645440" expanded="true" signature="2564:4951" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="2579:3023" ph="/* If crouching, check to see if the character can stand up ... */" />
-            <marker date="1548450645440" expanded="true" signature="3060:4817" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="3122:3590" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="3172:3298" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="3607:3966" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="3824:3952" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="4478:4570" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="4715:4807" ph="{...}" />
-            <marker date="1548450645440" expanded="true" signature="4977:5128" ph="{...}" />
+            <marker date="1548455866344" expanded="true" signature="6:127" ph="..." />
+            <marker date="1548455866344" expanded="true" signature="165:354" ph="{...}" />
+            <marker date="1548455866344" expanded="true" signature="194:284" ph="{...}" />
+            <marker date="1548455866344" expanded="true" signature="312:352" ph="{...}" />
           </folding>
         </state>
       </provider>
