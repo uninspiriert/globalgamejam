@@ -8,23 +8,23 @@ public class MoveScript : MonoBehaviour
 
     public float runSpeed = 40f;
 
-    float horizontalMove = 0f;
+    private float _horizontalMove;
     
-    bool jump = false;
+    private bool _jump;
 
-    void Start()
+    private void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        _horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         if (Input.GetButtonDown("Jump")) {
-            jump = true;
+            _jump = true;
         }  
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
+        controller.Move(_horizontalMove * Time.fixedDeltaTime, false, _jump);
+        _jump = false;
     }
 }
 

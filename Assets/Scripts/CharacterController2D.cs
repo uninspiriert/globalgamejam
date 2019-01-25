@@ -135,10 +135,6 @@ public class CharacterController2D : MonoBehaviour
 		// Switch the way the player is labelled as facing.
 		_facingRight = !_facingRight;
 
-		// Multiply the player's x local scale by -1.
-		var transform1 = transform;
-		var theScale = transform1.localScale;
-		theScale.x *= -1;
-		transform1.localScale = theScale;
+		transform.Rotate(0f, 180f, 0f);
 	}
 }
