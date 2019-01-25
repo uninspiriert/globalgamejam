@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3323bfa-3bc4-433d-b57a-ee980a188e66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.globalgamejam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Demo/Demo.unity.orig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/Free Platform Game Assets/Demo/Demo.unity.orig.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoveScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoveScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta.orig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta.orig.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveScript.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c3323bfa-3bc4-433d-b57a-ee980a188e66" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,25 +14,25 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="643">
-              <caret line="137" column="37" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
+              <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
               <folding>
-                <marker date="1548446907854" expanded="false" signature="6:44" ph="..." />
-                <marker date="1548446907854" expanded="true" signature="96:4468" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="1671:1852" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="1881:2400" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="1940:2147" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-                <marker date="1548446907854" expanded="true" signature="2276:2397" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2456:4315" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2536:2748" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2715:2744" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2847:4128" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2886:3207" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="2915:2987" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="3212:3448" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="3369:3443" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="3897:3947" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="4074:4124" ph="{...}" />
-                <marker date="1548446907854" expanded="true" signature="4338:4466" ph="{...}" />
+                <marker date="1548446941380" expanded="false" signature="6:44" ph="..." />
+                <marker date="1548446941380" expanded="true" signature="96:4467" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="1671:1852" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="1881:2400" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="1940:2147" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
+                <marker date="1548446941380" expanded="true" signature="2276:2397" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2456:4315" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2536:2748" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2715:2744" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2847:4128" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2886:3207" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="2915:2987" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="3212:3448" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="3369:3443" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="3897:3947" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="4074:4124" ph="{...}" />
+                <marker date="1548446941380" expanded="true" signature="4338:4465" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -166,12 +155,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548442694601</updated>
       <workItem from="1548442699863" duration="179000" />
-      <workItem from="1548442918987" duration="2819000" />
+      <workItem from="1548442918987" duration="3064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2998000" />
+    <option name="totallyTimeSpent" value="3243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,25 +249,25 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
-          <caret line="137" column="37" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
+          <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
           <folding>
-            <marker date="1548446907854" expanded="false" signature="6:44" ph="..." />
-            <marker date="1548446907854" expanded="true" signature="96:4468" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="1671:1852" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="1881:2400" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="1940:2147" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-            <marker date="1548446907854" expanded="true" signature="2276:2397" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2456:4315" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2536:2748" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2715:2744" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2847:4128" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2886:3207" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="2915:2987" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="3212:3448" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="3369:3443" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="3897:3947" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="4074:4124" ph="{...}" />
-            <marker date="1548446907854" expanded="true" signature="4338:4466" ph="{...}" />
+            <marker date="1548446941380" expanded="false" signature="6:44" ph="..." />
+            <marker date="1548446941380" expanded="true" signature="96:4467" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="1671:1852" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="1881:2400" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="1940:2147" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
+            <marker date="1548446941380" expanded="true" signature="2276:2397" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2456:4315" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2536:2748" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2715:2744" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2847:4128" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2886:3207" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="2915:2987" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="3212:3448" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="3369:3443" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="3897:3947" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="4074:4124" ph="{...}" />
+            <marker date="1548446941380" expanded="true" signature="4338:4465" ph="{...}" />
           </folding>
         </state>
       </provider>
