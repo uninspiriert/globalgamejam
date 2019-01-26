@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MoveScript : MonoBehaviour
 {
@@ -8,13 +6,22 @@ public class MoveScript : MonoBehaviour
 
     public float runSpeed = 40f;
 
+    public int playerNumber;
+
     private float _horizontalMove;
     
     private bool _jump;
 
+    private string _horizontal;
+
+    private void Start()
+    {
+        _horizontal = "Horizontal" + playerNumber;
+    }
+
     private void Update()
     {
-        _horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        _horizontalMove = Input.GetAxisRaw(_horizontal) * runSpeed;
 
         if (Input.GetButtonDown("Jump")) {
             _jump = true;
