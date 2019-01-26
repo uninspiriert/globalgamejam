@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GroundLevel.unity
     guid: 645fd5127ef5ad64e8629a6e566fce13
+  - enabled: 1
+    path: Assets/Scenes/FirstFloor.unity
+    guid: de1973d4f5ecb4b6ba6a22ec20bdd9d1
+  - enabled: 1
+    path: Assets/Scenes/Roof.unity
+    guid: cc4b143386c6c44eb8a73d3f69e5779a
   m_configObjects: {}

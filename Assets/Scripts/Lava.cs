@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Lava : MonoBehaviour
 {
@@ -35,7 +36,14 @@ public class Lava : MonoBehaviour
         {
             _players.Remove(removed);
         }
-        
-        ingameMenu.SetActive(true);
+
+        if (SceneManager.GetActiveScene().buildIndex != 3)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            ingameMenu.SetActive(true);
+        }
     }
 }
