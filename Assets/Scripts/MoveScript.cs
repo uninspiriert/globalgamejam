@@ -1,13 +1,30 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class MoveScript : MonoBehaviour
 {
-    public CharacterController2D controller;
-
     public float runSpeed = 40f;
 
     public int playerNumber;
+
+    public int jumpForce;
+
+    public Collider2D punchCollider;
+
+    public Player otherPlayer;
+
+    public Transform groundCheck;
+
+    public LayerMask groundMask;
+
+    public bool punched;
+
+    private Rigidbody2D _rigidbody2D;
+
+    private bool _facingRight = true;
+
+    [SerializeField] private bool _grounded;
 
     private float _horizontalMove;
 
@@ -19,12 +36,10 @@ public class MoveScript : MonoBehaviour
 
     private string _punchInput;
 
-    public Collider2D punchCollider;
-
-    public GameObject otherPlayer;
-
     private void Start()
     {
+        _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
         _punchInput = $"J{playerNumber}Punch";
@@ -43,10 +58,31 @@ public class MoveScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(_horizontalMove * Time.fixedDeltaTime, false, _jump);
+        var colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f, groundMask);
+        _grounded = colliders.Any(t => t.gameObject != gameObject);
+
+        Move();
+
+        if (_jump && _grounded)
+        {
+            _rigidbody2D.AddForce(new Vector2(0, jumpForce));
+        }
+
         _jump = false;
     }
 
+    private void Move()
+    {
+        if ( punched) return;
+
+        var velocity = new Vector2(_horizontalMove * Time.fixedDeltaTime * runSpeed, _rigidbody2D.velocity.y);
+        _rigidbody2D.velocity = velocity;
+        if (velocity.x > 0 && !_facingRight || velocity.x < 0 && _facingRight)
+        {
+            Flip();
+        }
+    }
+    
     private void Punch()
     {
         if (otherPlayer == null) return;
@@ -56,8 +92,34 @@ public class MoveScript : MonoBehaviour
 
         if (!touching) return;
 
-        var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
+        var movedScript = otherPlayer.GetComponent<MoveScript>();
+        movedScript.punched = true;
+        StartCoroutine(movedScript.StopPunchStun());
 
-        // TODO: implement trajectory away from player (le big punch)
+        Debug.Log("One Punch");
+        var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
+        var otherPos = otherRigid.transform.position;
+
+        var thisPos = transform.position;
+        thisPos.y -= 1;
+
+        var dir = (otherPos - thisPos).normalized;
+
+        Debug.Log(dir * 100);
+
+        otherRigid.AddForce(dir * 100, ForceMode2D.Impulse);
+    }
+
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        _facingRight = !_facingRight;
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+    public IEnumerator StopPunchStun()
+    {
+        yield return new WaitForSeconds(0.5f );
+        punched = false;
     }
 }
