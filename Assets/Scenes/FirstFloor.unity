@@ -190,7 +190,7 @@ MonoBehaviour:
   playerNumber: 1
   jumpForce: 1700
   punchCollider: {fileID: 1024617568}
-  otherPlayer: {fileID: 0}
+  otherPlayer: {fileID: 1589100009}
   groundCheck: {fileID: 2116949006}
   groundMask:
     serializedVersion: 2
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerOne: {fileID: 175465918}
-  playerTwo: {fileID: 0}
+  playerTwo: {fileID: 1589100006}
   cameraMinClamp: 20
   cameraMaxClamp: 50
 --- !u!1 &887321372
@@ -1999,7 +1999,7 @@ MonoBehaviour:
   playerNumber: 2
   jumpForce: 1700
   punchCollider: {fileID: 347731883}
-  otherPlayer: {fileID: 0}
+  otherPlayer: {fileID: 175465919}
   groundCheck: {fileID: 527445903}
   groundMask:
     serializedVersion: 2
