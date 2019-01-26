@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -79,8 +80,9 @@ public class MoveScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f, groundMask);
-        _grounded = colliders.Any(t => t.gameObject != gameObject);
+//        var colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f, groundMask);
+//        _grounded = colliders.Any(t => t.gameObject != gameObject);
+        _grounded = Math.Abs(_rigidbody2D.velocity.y) < 0.0001;
 
         Move();
 
