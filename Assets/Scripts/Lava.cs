@@ -6,6 +6,9 @@ using UnityEngine;
 public class Lava : MonoBehaviour
 {
     public GameObject[] players;
+    
+    
+    public GameObject ingameMenu;
 
     private IList<GameObject> _players;
 
@@ -32,5 +35,7 @@ public class Lava : MonoBehaviour
         {
             _players.Remove(removed);
         }
+        
+        ingameMenu.SetActive(true);
     }
 }
