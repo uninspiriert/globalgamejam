@@ -9,7 +9,7 @@ public class MoveScript : MonoBehaviour
     public int playerNumber;
 
     private float _horizontalMove;
-    
+
     private bool _jump;
 
     private string _horizontalInput;
@@ -34,4 +34,3 @@ public class MoveScript : MonoBehaviour
         _jump = false;
     }
 }
-
