@@ -24,7 +24,7 @@ public class MoveScript : MonoBehaviour
 
     private bool _facingRight = true;
 
-    [SerializeField] private bool _grounded;
+    private bool _grounded;
 
     private float _horizontalMove;
 
@@ -105,8 +105,6 @@ public class MoveScript : MonoBehaviour
 
         var dir = (otherPos - thisPos).normalized;
 
-        Debug.Log(dir * 100);
-
         otherRigid.AddForce(dir * 100, ForceMode2D.Impulse);
     }
 
@@ -117,7 +115,7 @@ public class MoveScript : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    public IEnumerator StopPunchStun()
+    private IEnumerator StopPunchStun()
     {
         yield return new WaitForSeconds(0.5f );
         punched = false;
