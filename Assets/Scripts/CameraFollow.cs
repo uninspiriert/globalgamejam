@@ -1,6 +1,4 @@
-using System.Linq;
 using UnityEngine;
-using Debug = System.Diagnostics.Debug;
 
 public class CameraFollow : MonoBehaviour
 {
