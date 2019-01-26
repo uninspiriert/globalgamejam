@@ -58,6 +58,6 @@ public class MoveScript : MonoBehaviour
         var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
         var vec = controller.FacingRight ? Vector2.right : Vector2.left;
 
-        otherRigid.AddForce(new Vector2(1, 1) * 500f);
+        otherRigid.AddForce(new Vector2(2000, 5000));
     }
 }
