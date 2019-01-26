@@ -22,6 +22,9 @@ public class CharacterController2D : MonoBehaviour
     private bool _grounded; // Whether or not the player is grounded.
     private Rigidbody2D _rigidbody2D;
     private bool _facingRight = true; // For determining which way the player is currently facing.
+
+    public bool FacingRight => _facingRight;
+
     private Vector3 _velocity = Vector3.zero;
 
     [Header("Events")] [Space] public UnityEvent onLandEvent;
