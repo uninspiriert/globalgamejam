@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class MoveScript : MonoBehaviour
 {
+    public Animator animator;
+
     public float runSpeed = 40f;
 
     public float strength = 100f;
@@ -33,9 +35,13 @@ public class MoveScript : MonoBehaviour
 
     private bool _jump;
 
+    private bool _dab;
+
     private string _horizontalInput;
 
     private string _jumpInput;
+
+    private string _dabInput;
 
     private string _punchInput;
 
@@ -46,6 +52,7 @@ public class MoveScript : MonoBehaviour
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
         _punchInput = $"J{playerNumber}Punch";
+        _dabInput = $"J{playerNumber}Dab";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -70,7 +77,16 @@ public class MoveScript : MonoBehaviour
     private void Update()
     {
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
+        animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
+
         _jump = Input.GetButtonDown(_jumpInput);
+
+        _dab = Input.GetButtonDown(_dabInput);
+
+        if (_dab)
+        {
+            animator.SetBool("Dab", true);
+        }
 
         if (Input.GetButtonDown(_punchInput))
         {
