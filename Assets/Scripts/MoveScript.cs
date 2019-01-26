@@ -12,20 +12,20 @@ public class MoveScript : MonoBehaviour
     
     private bool _jump;
 
-    private string _horizontal;
+    private string _horizontalInput;
+
+    private string _jumpInput;
 
     private void Start()
     {
-        _horizontal = "Horizontal" + playerNumber;
+        _horizontalInput = $"J{playerNumber}Horizontal";
+        _jumpInput = $"J{playerNumber}Jump";
     }
 
     private void Update()
     {
-        _horizontalMove = Input.GetAxisRaw(_horizontal) * runSpeed;
-
-        if (Input.GetButtonDown("Jump")) {
-            _jump = true;
-        }  
+        _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
+        _jump = Input.GetButtonDown(_jumpInput);
     }
 
     private void FixedUpdate()
