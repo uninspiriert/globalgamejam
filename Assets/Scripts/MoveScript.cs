@@ -83,6 +83,11 @@ public class MoveScript : MonoBehaviour
 
         _dab = Input.GetButtonDown(_dabInput);
 
+        if (Input.GetButtonUp(_dabInput))
+        {
+        animator.SetBool("Dab", false);
+        }
+
         if (_dab)
         {
             animator.SetBool("Dab", true);
