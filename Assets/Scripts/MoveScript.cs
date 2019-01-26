@@ -49,15 +49,15 @@ public class MoveScript : MonoBehaviour
 
     private void Punch()
     {
+        if (otherPlayer == null) return;
+
         var colliders = otherPlayer.GetComponents<Collider2D>();
         var touching = colliders.Any(coll => punchCollider.IsTouching(coll));
 
         if (!touching) return;
 
-        Debug.Log("One PUUUUNCH");
         var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
-        var vec = controller.FacingRight ? Vector2.right : Vector2.left;
 
-        otherRigid.AddForce(new Vector2(1, 1) * 500f);
+        // TODO: implement trajectory away from player (le big punch)
     }
 }
