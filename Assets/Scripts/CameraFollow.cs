@@ -12,6 +12,8 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
+        if (playerOne == null || playerTwo == null) return;
+
         var avgX = (playerOne.transform.position.x + playerTwo.transform.position.x) / 2f;
         var position = transform.position;
 

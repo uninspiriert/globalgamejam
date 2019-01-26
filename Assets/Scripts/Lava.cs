@@ -26,7 +26,6 @@ public class Lava : MonoBehaviour
         {
             if (other.transform != player.transform) continue;
             var health = player.GetComponent<Health>();
-            _players.Remove(player);
             health.Kill();
             removed = player;
             break;
