@@ -20,6 +20,8 @@ public class MoveScript : MonoBehaviour
 
     public bool punched;
 
+    public int punchForce = 100;
+
     private Rigidbody2D _rigidbody2D;
 
     private bool _facingRight = true;
@@ -105,7 +107,7 @@ public class MoveScript : MonoBehaviour
 
         var dir = (otherPos - thisPos).normalized;
 
-        otherRigid.AddForce(dir * 100, ForceMode2D.Impulse);
+        otherRigid.AddForce(dir * punchForce, ForceMode2D.Impulse);
     }
 
     private void Flip()
