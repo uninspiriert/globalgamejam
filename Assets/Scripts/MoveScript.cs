@@ -17,10 +17,6 @@ public class MoveScript : MonoBehaviour
 
     public Player otherPlayer;
 
-    public Transform groundCheck;
-
-    public LayerMask groundMask;
-
     public bool punched;
 
     private Rigidbody2D _rigidbody2D;
@@ -39,6 +35,8 @@ public class MoveScript : MonoBehaviour
 
     private string _punchInput;
 
+    private string _knowUpInput;
+
     private void Start()
     {
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -46,12 +44,13 @@ public class MoveScript : MonoBehaviour
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
         _punchInput = $"J{playerNumber}Punch";
+        _knowUpInput = $"J{playerNumber}KnockUp";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Collectable")) return;
-        
+
         Destroy(other.gameObject);
         Debug.Log("REEE");
 
@@ -76,12 +75,15 @@ public class MoveScript : MonoBehaviour
         {
             Punch();
         }
+        
+        if (Input.GetButtonDown(_knowUpInput))
+        {
+            KnockUp();
+        }
     }
 
     private void FixedUpdate()
     {
-//        var colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f, groundMask);
-//        _grounded = colliders.Any(t => t.gameObject != gameObject);
         _grounded = Math.Abs(_rigidbody2D.velocity.y) < 0.0001;
 
         Move();
@@ -117,7 +119,7 @@ public class MoveScript : MonoBehaviour
 
         var movedScript = otherPlayer.GetComponent<MoveScript>();
         movedScript.punched = true;
-        StartCoroutine(movedScript.StopPunchStun());
+        StartCoroutine(movedScript.StopPunchStun(0.5f));
 
         Debug.Log("One Punch");
         var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
@@ -133,6 +135,29 @@ public class MoveScript : MonoBehaviour
         otherRigid.AddForce(dir * strength, ForceMode2D.Impulse);
     }
 
+    private void KnockUp()
+    {
+        if (otherPlayer == null) return;
+
+        var colliders = otherPlayer.GetComponents<Collider2D>();
+        var touching = colliders.Any(coll => punchCollider.IsTouching(coll));
+
+        if (!touching) return;
+
+        var movedScript = otherPlayer.GetComponent<MoveScript>();
+        movedScript.punched = true;
+        StartCoroutine(movedScript.StopPunchStun(1f));
+
+        Debug.Log("One Punch");
+        var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
+
+        var dir = Vector2.up.normalized;
+
+        Debug.Log(dir * strength);
+
+        otherRigid.AddForce(dir * strength, ForceMode2D.Impulse);
+    }
+
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
@@ -140,9 +165,9 @@ public class MoveScript : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    private IEnumerator StopPunchStun()
+    private IEnumerator StopPunchStun(float seconds)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(seconds);
         punched = false;
     }
 }
