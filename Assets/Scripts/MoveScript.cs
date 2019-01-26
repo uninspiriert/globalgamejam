@@ -39,8 +39,6 @@ public class MoveScript : MonoBehaviour
 
     private string _punchInput;
 
-    private string _hookInput;
-
     private void Start()
     {
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -48,28 +46,24 @@ public class MoveScript : MonoBehaviour
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
         _punchInput = $"J{playerNumber}Punch";
-        _hookInput = $"J{playerNumber}Hook";
     }
-    public GameObject[] players;
 
-    private IList<GameObject> _players;
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Collectable"))
-        {
-            Destroy(other.gameObject);
-            Debug.Log("REEE");
+        if (!other.gameObject.CompareTag("Collectable")) return;
+        
+        Destroy(other.gameObject);
+        Debug.Log("REEE");
 
-            if (other.gameObject.name == "Coin of Agillity")
-            {
-                Debug.Log("Zoom");
-                runSpeed = 80f;
-            }
-            else if (other.gameObject.name == "Coin of Power")
-            {
-                Debug.Log("WRYYYY");
-                strength += 10;
-            }
+        if (other.gameObject.name == "Coin of Agillity")
+        {
+            Debug.Log("Zoom");
+            runSpeed = 80f;
+        }
+        else if (other.gameObject.name == "Coin of Power")
+        {
+            Debug.Log("WRYYYY");
+            strength += 10;
         }
     }
 
@@ -81,10 +75,6 @@ public class MoveScript : MonoBehaviour
         if (Input.GetButtonDown(_punchInput))
         {
             Punch();
-        }
-        else if (Input.GetButtonDown(_hookInput))
-        {
-            Hook();
         }
     }
 
@@ -134,33 +124,6 @@ public class MoveScript : MonoBehaviour
 
         var thisPos = transform.position;
         thisPos.y -= 1;
-
-        var dir = (otherPos - thisPos).normalized;
-
-        Debug.Log(dir * strength);
-
-        otherRigid.AddForce(dir * strength, ForceMode2D.Impulse);
-    }
-
-    private void Hook()
-    {
-        if (otherPlayer == null) return;
-
-        var colliders = otherPlayer.GetComponents<Collider2D>();
-        var touching = colliders.Any(coll => punchCollider.IsTouching(coll));
-
-        if (!touching) return;
-
-        var movedScript = otherPlayer.GetComponent<MoveScript>();
-        movedScript.punched = true;
-        StartCoroutine(movedScript.StopPunchStun());
-
-        Debug.Log("One Hook");
-        var otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
-        var otherPos = otherRigid.transform.position;
-
-        var thisPos = transform.position;
-        thisPos.y -= 2f;
 
         var dir = (otherPos - thisPos).normalized;
 
