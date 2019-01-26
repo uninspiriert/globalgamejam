@@ -568,7 +568,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   punched: 0
-  _grounded: 0
+  punchForce: 50
 --- !u!50 &1067481851
 Rigidbody2D:
   serializedVersion: 4
@@ -761,7 +761,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   punched: 0
-  _grounded: 0
+  punchForce: 50
 --- !u!50 &1359659715
 Rigidbody2D:
   serializedVersion: 4
