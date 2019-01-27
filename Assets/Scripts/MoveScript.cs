@@ -63,12 +63,12 @@ public class MoveScript : MonoBehaviour
         Destroy(other.gameObject);
         Debug.Log("REEE");
 
-        if (other.gameObject.name == "Coin of Agillity")
+        if (other.gameObject.name == "Coke of Agility")
         {
             Debug.Log("Zoom");
-            runSpeed = 80f;
+            runSpeed = 60f;
         }
-        else if (other.gameObject.name == "Coin of Power")
+        else if (other.gameObject.name == "Item of Power")
         {
             Debug.Log("WRYYYY");
             strength += 10;

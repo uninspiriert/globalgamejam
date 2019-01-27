@@ -2325,7 +2325,7 @@ GameObject:
   - component: {fileID: 1211416246}
   - component: {fileID: 1211416245}
   m_Layer: 0
-  m_Name: Coke of Agility (1)
+  m_Name: Item of Power
   m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2339,7 +2339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211416243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.28, y: 9.129999, z: 0.578125}
+  m_LocalPosition: {x: -33.7, y: -11, z: 0.578125}
   m_LocalScale: {x: 0.557, y: 0.557, z: 0.557}
   m_Children: []
   m_Father: {fileID: 725166122}
@@ -2729,7 +2729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540727115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.28, y: 9.13, z: 0.578125}
+  m_LocalPosition: {x: -1.3, y: -8.2, z: 0.578125}
   m_LocalScale: {x: 0.557, y: 0.557, z: 0.557}
   m_Children: []
   m_Father: {fileID: 725166122}
