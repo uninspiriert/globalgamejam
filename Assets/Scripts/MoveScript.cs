@@ -78,7 +78,7 @@ public class MoveScript : MonoBehaviour
     private void Update()
     {
         if (punched) return;
-        
+
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
 
@@ -91,9 +91,9 @@ public class MoveScript : MonoBehaviour
         {
             animator.SetBool("Jump", true);
         }
-        else if (_grounded){
+        else if (_grounded)
+        {
             animator.SetBool("Jump", false);
-
         }
 
         _dab = Input.GetButtonDown(_dabInput);
@@ -101,7 +101,8 @@ public class MoveScript : MonoBehaviour
         {
             animator.SetBool("Dab", true);
         }
-        if(Input.GetButtonUp(_dabInput))
+
+        if (Input.GetButtonUp(_dabInput))
         {
             animator.SetBool("Dab", false);
         }
@@ -135,6 +136,11 @@ public class MoveScript : MonoBehaviour
 
     private void Move()
     {
+        if (punched)
+        {
+            return;
+        }
+
         var velocity = new Vector2(_horizontalMove * Time.fixedDeltaTime * runSpeed, _rigidbody2D.velocity.y);
         _rigidbody2D.velocity = velocity;
         if (velocity.x > 0 && !_facingRight || velocity.x < 0 && _facingRight)
