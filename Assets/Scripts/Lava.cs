@@ -55,6 +55,8 @@ public class Lava : MonoBehaviour
         }
 
         StartCoroutine(EndOfLevel());
+        boyWins = 0;
+        girlWins = 0;
     }
 
     private IEnumerator EndOfLevel()
@@ -65,11 +67,15 @@ public class Lava : MonoBehaviour
             
             if (playerNumber == 1)
             {
+                //Vector2 pos = girlText.transform.position;
+                //pos.y -= 200f;
                 girlText.SetActive(true);
                 girlWins++;
             }
             else
             {
+                //Vector2 pos = boyText.transform.position;
+                //pos.y -= 200f;
                 boyText.SetActive(true);
                 boyWins++;
             }
@@ -92,9 +98,6 @@ public class Lava : MonoBehaviour
             
             playAgain.SetActive(true);
             quit.SetActive(true);
-            
-            boyWins = 0;
-            girlWins = 0;
         }
     }
 }
