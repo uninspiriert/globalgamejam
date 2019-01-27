@@ -63,12 +63,12 @@ public class MoveScript : MonoBehaviour
         Destroy(other.gameObject);
         Debug.Log("REEE");
 
-        if (other.gameObject.name == "Coin of Agillity")
+        if (other.gameObject.name == "Coke of Agility")
         {
             Debug.Log("Zoom");
-            runSpeed = 80f;
+            runSpeed = 60f;
         }
-        else if (other.gameObject.name == "Coin of Power")
+        else if (other.gameObject.name == "Item of Power")
         {
             Debug.Log("WRYYYY");
             strength += 10;
@@ -77,6 +77,7 @@ public class MoveScript : MonoBehaviour
 
     private void Update()
     {
+        if (punched) return;
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
 
@@ -89,9 +90,9 @@ public class MoveScript : MonoBehaviour
         {
             animator.SetBool("Jump", true);
         }
-        else if (_grounded){
+        else if (_grounded)
+        {
             animator.SetBool("Jump", false);
-
         }
 
         _dab = Input.GetButtonDown(_dabInput);
@@ -99,7 +100,8 @@ public class MoveScript : MonoBehaviour
         {
             animator.SetBool("Dab", true);
         }
-        if(Input.GetButtonUp(_dabInput))
+
+        if (Input.GetButtonUp(_dabInput))
         {
             animator.SetBool("Dab", false);
         }
