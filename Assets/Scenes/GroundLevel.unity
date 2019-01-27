@@ -462,9 +462,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.1223698}
+  m_Offset: {x: 0.044734746, y: -3.46}
   serializedVersion: 2
-  m_Radius: 1.3776722
+  m_Radius: 2.5295799
 --- !u!212 &210498435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.6487088}
+  m_Offset: {x: 0.07828522, y: 1.1296043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -553,7 +553,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7353592, y: 3.4688253}
+  m_Size: {x: 5.039175, y: 9.172449}
   m_EdgeRadius: 0
 --- !u!95 &210498438
 Animator:
@@ -830,9 +830,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9439792, y: 0.17094806}
+  m_Offset: {x: 0.9587183, y: 0.28034922}
   serializedVersion: 2
-  m_Radius: 1.0602176
+  m_Radius: 0.4463546
 --- !u!1 &479735968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,9 +1229,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.14, y: -0.59}
   serializedVersion: 2
-  m_Radius: 1.51
+  m_Radius: 0.700114
 --- !u!4 &689033947
 Transform:
   m_ObjectHideFlags: 0
@@ -1451,7 +1451,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011183739, y: 0.46322536}
+  m_Offset: {x: 0.39562607, y: 0.5381541}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1462,7 +1462,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.4298563, y: 8.705937}
+  m_Size: {x: 2.4880447, y: 4.111293}
   m_EdgeRadius: 0
 --- !u!114 &727679465
 MonoBehaviour:
@@ -1530,9 +1530,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.9162827}
+  m_Offset: {x: 0.38320732, y: -1.4579921}
   serializedVersion: 2
-  m_Radius: 2.2249987
+  m_Radius: 1.2638912
 --- !u!212 &727679469
 SpriteRenderer:
   m_ObjectHideFlags: 0
