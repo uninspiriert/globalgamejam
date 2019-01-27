@@ -59,7 +59,7 @@ public class Lava : MonoBehaviour
 
     private IEnumerator EndOfLevel()
     {
-        if (boyWins < 2 || girlWins < 2)
+        if (boyWins == 0 && playerNumber == 2 || girlWins == 0 && playerNumber == 1)
         {   
             Menu.SetActive(true);
             
@@ -72,7 +72,6 @@ public class Lava : MonoBehaviour
             {
                 boyText.SetActive(true);
                 boyWins++;
-                Debug.Log(boyWins);
             }
             
             yield return new WaitForSeconds(1.5f);
