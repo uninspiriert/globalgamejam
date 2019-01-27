@@ -78,9 +78,12 @@ public class MoveScript : MonoBehaviour
     private void Update()
     {
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
-        animator.SetFloat("Speed", _horizontalMove);
+        animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
 
-        _jump = Input.GetButtonDown(_jumpInput);
+        if (Input.GetButtonDown(_jumpInput))
+        {
+            _jump = true;
+        }
 
         if (_jump)
         {
