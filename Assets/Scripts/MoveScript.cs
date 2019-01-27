@@ -68,16 +68,18 @@ public class MoveScript : MonoBehaviour
         Destroy(other.gameObject);
         Debug.Log("REEE");
 
-        if (other.gameObject.name == "Coke of Agility")
+        if (other.gameObject.name == "Coke of Power")
         {
-            Debug.Log("Zoom");
             _audioSource.PlayOneShot(drinkSound);
+            strength += 10;
+        }
+        else if (other.gameObject.name == "Shoe of Agility")
+        {
             runSpeed = 60f;
         }
-        else if (other.gameObject.name == "Item of Power")
+        else if (other.gameObject.name == "Blob of Jumping")
         {
-            Debug.Log("WRYYYY");
-            strength += 10;
+            jumpForce += 200;
         }
     }
 
