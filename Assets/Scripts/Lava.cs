@@ -54,6 +54,7 @@ public class Lava : MonoBehaviour
         {
             playerNumber = removed.GetComponent<MoveScript>().playerNumber;
             _players.Remove(removed);
+            players = _players.ToArray();
         }
 
         StartCoroutine(EndOfLevel());
