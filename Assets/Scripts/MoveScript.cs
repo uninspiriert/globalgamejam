@@ -63,12 +63,12 @@ public class MoveScript : MonoBehaviour
         Destroy(other.gameObject);
         Debug.Log("REEE");
 
-        if (other.gameObject.name == "Coin of Agillity")
+        if (other.gameObject.name == "Coke of Agility")
         {
             Debug.Log("Zoom");
-            runSpeed = 80f;
+            runSpeed = 60f;
         }
-        else if (other.gameObject.name == "Coin of Power")
+        else if (other.gameObject.name == "Item of Power")
         {
             Debug.Log("WRYYYY");
             strength += 10;
@@ -78,7 +78,6 @@ public class MoveScript : MonoBehaviour
     private void Update()
     {
         if (punched) return;
-
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
 
@@ -136,10 +135,7 @@ public class MoveScript : MonoBehaviour
 
     private void Move()
     {
-        if (punched)
-        {
-            return;
-        }
+        if (punched) return;
 
         var velocity = new Vector2(_horizontalMove * Time.fixedDeltaTime * runSpeed, _rigidbody2D.velocity.y);
         _rigidbody2D.velocity = velocity;
