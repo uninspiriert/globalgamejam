@@ -72,6 +72,7 @@ public class Lava : MonoBehaviour
             {
                 boyText.SetActive(true);
                 boyWins++;
+                Debug.Log(boyWins);
             }
             
             yield return new WaitForSeconds(1.5f);
