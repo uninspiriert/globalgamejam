@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 175465921}
   - component: {fileID: 175465919}
   - component: {fileID: 175465920}
+  - component: {fileID: 175465926}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Untagged
@@ -146,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07fdf09bda0be74483753379d2aa56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 100
 --- !u!61 &175465920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -185,16 +185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131e659cc38b7404a856b7103c81efc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 175465926}
   runSpeed: 50
   strength: 50
   playerNumber: 1
   jumpForce: 1700
   punchCollider: {fileID: 1024617568}
   otherPlayer: {fileID: 1589100009}
-  groundCheck: {fileID: 2116949006}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   punched: 0
 --- !u!50 &175465922
 Rigidbody2D:
@@ -290,13 +287,32 @@ Transform:
   m_GameObject: {fileID: 175465918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.65, y: 14.15, z: -2.6477625}
-  m_LocalScale: {x: 1.078, y: 1.078, z: 1.078}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_Children:
   - {fileID: 2116949006}
   - {fileID: 1024617569}
   m_Father: {fileID: 1968625953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &175465926
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175465918}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f5ac0380233aad46b05adf48889427e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &193780098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1936,7 @@ GameObject:
   - component: {fileID: 1589100010}
   - component: {fileID: 1589100009}
   - component: {fileID: 1589100008}
+  - component: {fileID: 1589100014}
   m_Layer: 0
   m_Name: PlayerTwo
   m_TagString: Untagged
@@ -1936,7 +1953,7 @@ Transform:
   m_GameObject: {fileID: 1589100006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 17.14, y: 14.28, z: -2.6477625}
-  m_LocalScale: {x: 0.45318, y: 0.45318, z: 0.45318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 527445903}
   - {fileID: 347731882}
@@ -1981,7 +1998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07fdf09bda0be74483753379d2aa56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 100
 --- !u!114 &1589100010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,16 +2010,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131e659cc38b7404a856b7103c81efc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1589100014}
   runSpeed: 50
   strength: 50
   playerNumber: 2
   jumpForce: 1700
   punchCollider: {fileID: 347731883}
   otherPlayer: {fileID: 175465919}
-  groundCheck: {fileID: 527445903}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   punched: 0
 --- !u!50 &1589100011
 Rigidbody2D:
@@ -2090,6 +2103,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1589100014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589100006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d71548f90605d4a4b8f510db85ece89d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1752735353
 GameObject:
   m_ObjectHideFlags: 0

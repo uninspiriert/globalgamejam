@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 274942492}
   - component: {fileID: 274942491}
   - component: {fileID: 274942490}
+  - component: {fileID: 274942496}
   m_Layer: 0
   m_Name: PlayerTwo
   m_TagString: Untagged
@@ -337,7 +338,7 @@ Transform:
   m_GameObject: {fileID: 274942488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.23, y: -4.11, z: -3.064152}
-  m_LocalScale: {x: 0.45317778, y: 0.45317778, z: 0.45317778}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1872863734}
   - {fileID: 2120836451}
@@ -382,7 +383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07fdf09bda0be74483753379d2aa56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 100
 --- !u!114 &274942492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,16 +395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131e659cc38b7404a856b7103c81efc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 274942496}
   runSpeed: 50
   strength: 50
   playerNumber: 2
   jumpForce: 1700
   punchCollider: {fileID: 2120836452}
   otherPlayer: {fileID: 1036252274}
-  groundCheck: {fileID: 1872863734}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   punched: 0
 --- !u!50 &274942493
 Rigidbody2D:
@@ -491,6 +488,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &274942496
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274942488}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d71548f90605d4a4b8f510db85ece89d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &403059123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1080,7 @@ GameObject:
   - component: {fileID: 1036252276}
   - component: {fileID: 1036252274}
   - component: {fileID: 1036252275}
+  - component: {fileID: 1036252281}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Untagged
@@ -1083,7 +1100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07fdf09bda0be74483753379d2aa56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 100
 --- !u!61 &1036252275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1122,16 +1138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131e659cc38b7404a856b7103c81efc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1036252281}
   runSpeed: 50
   strength: 50
   playerNumber: 1
   jumpForce: 1700
   punchCollider: {fileID: 915339617}
   otherPlayer: {fileID: 274942491}
-  groundCheck: {fileID: 832935189}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   punched: 0
 --- !u!50 &1036252277
 Rigidbody2D:
@@ -1227,13 +1240,32 @@ Transform:
   m_GameObject: {fileID: 1036252273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -27.6, y: -4.3, z: -3.064152}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_Children:
   - {fileID: 832935189}
   - {fileID: 915339618}
   m_Father: {fileID: 468368253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1036252281
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036252273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f5ac0380233aad46b05adf48889427e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1137640823
 GameObject:
   m_ObjectHideFlags: 0

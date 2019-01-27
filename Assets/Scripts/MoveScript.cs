@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class MoveScript : MonoBehaviour
 {
+    public Animator animator;
+
     public float runSpeed = 40f;
 
     public float strength = 100f;
@@ -29,9 +31,15 @@ public class MoveScript : MonoBehaviour
 
     private bool _jump;
 
+    private bool _dab;
+
+    private bool _punch;
+
     private string _horizontalInput;
 
     private string _jumpInput;
+
+    private string _dabInput;
 
     private string _punchInput;
 
@@ -44,6 +52,7 @@ public class MoveScript : MonoBehaviour
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
         _punchInput = $"J{playerNumber}Punch";
+        _dabInput = $"J{playerNumber}Dab";
         _knowUpInput = $"J{playerNumber}KnockUp";
     }
 
@@ -69,13 +78,35 @@ public class MoveScript : MonoBehaviour
     private void Update()
     {
         _horizontalMove = Input.GetAxisRaw(_horizontalInput) * runSpeed;
+        animator.SetFloat("Speed", _horizontalMove);
+
         _jump = Input.GetButtonDown(_jumpInput);
+
+        if (_jump)
+        {
+            animator.SetBool("Jump", true);
+        }
+        else if (_grounded){
+            animator.SetBool("Jump", false);
+
+        }
+
+        _dab = Input.GetButtonDown(_dabInput);
+        if (_dab)
+        {
+            animator.SetBool("Dab", true);
+        }
+        if(Input.GetButtonUp(_dabInput))
+        {
+            animator.SetBool("Dab", false);
+        }
 
         if (Input.GetButtonDown(_punchInput))
         {
             Punch();
+            animator.SetTrigger("Punch");
         }
-        
+
         if (Input.GetButtonDown(_knowUpInput))
         {
             KnockUp();
