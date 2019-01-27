@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 1d66acc44b57a4c03a8b8f9a45e08bf6
+guid: 189fb6e9ac58add48b7dd11d9c12f0b4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: run_0
-    21300002: run_1
-    21300004: run_2
-    21300006: run_3
-    21300008: run_4
-    21300010: run_5
+    21300000: bottle_0
+    21300002: bottle_1
+    21300004: bottle_2
+    21300006: bottle_3
+    21300008: bottle_4
+    21300010: bottle_5
+    21300012: bottle_6
+    21300014: bottle_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,121 +92,161 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: run_0
+      name: bottle_0
       rect:
         serializedVersion: 2
-        x: 117
-        y: 233
-        width: 726
-        height: 1182
+        x: 35
+        y: 0
+        width: 261
+        height: 823
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1206fee045b963c4e92d57ec9676d63b
+      spriteID: 201c0ebc53810ae4f80d80a0596dbd9f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_1
+      name: bottle_1
       rect:
         serializedVersion: 2
-        x: 945
-        y: 208
-        width: 645
-        height: 1207
+        x: 345
+        y: 0
+        width: 323
+        height: 803
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b471f195e6a3e544820e50e6afe51dd
+      spriteID: ec2778e25453294469663e66cfeec0a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_2
+      name: bottle_2
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 205
-        width: 644
-        height: 1207
+        x: 730
+        y: 0
+        width: 263
+        height: 742
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afa108930815eb745aa8f37998a6fefe
+      spriteID: 2c87235bd769c32479f99d191061e2f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_3
+      name: bottle_3
       rect:
         serializedVersion: 2
-        x: 2437
-        y: 229
-        width: 652
-        height: 1183
+        x: 1085
+        y: 0
+        width: 318
+        height: 803
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6da3c786b6f970e44b179501d44ea971
+      spriteID: 11eda609b2748b6468843507d9f68072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_4
+      name: bottle_4
       rect:
         serializedVersion: 2
-        x: 3191
-        y: 210
-        width: 642
-        height: 1205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 0
+        width: 260
+        height: 49
+      alignment: 9
+      pivot: {x: 0.47167557, y: 0.50000006}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cad25f99cfb3934faef99c6c7b26fbd
+      spriteID: eae39b3cf187fe54db29e125dadd4a0e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_5
+      name: bottle_5
       rect:
         serializedVersion: 2
-        x: 3936
-        y: 210
-        width: 642
-        height: 1207
+        x: 346
+        y: 0
+        width: 260
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c96289f33e4bb85448c5d38299cc7d8f
+      spriteID: c64ccb298b5d02944b365c4c0c65e115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle_6
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 260
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ff7bc36f656b40a55a83fa082c3a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle_7
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 0
+        width: 260
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfc620df4c8791409c2d61480edfc61
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9f051874b57024a098d1e29a776c828a
+    spriteID: de51f3610b3ef2e47b46d45b16eb8db5
     vertices: []
     indices: 
     edges: []
