@@ -113,6 +113,7 @@ public class MoveScript : MonoBehaviour
         if (Input.GetButtonDown(_knowUpInput))
         {
             KnockUp();
+            animator.SetTrigger("Punch");
         }
     }
 
