@@ -82,12 +82,12 @@ public class Lava : MonoBehaviour
         {
             Menu.SetActive(true);
             
-            if (boyWins > 1)
+            if (boyWins == 1 && playerNumber == 2)
             {
-                girlText.SetActive(true);
+                boyText.SetActive(true);
             }
             else {
-                boyText.SetActive(true);
+                girlText.SetActive(true);
             }
             
             playAgain.SetActive(true);
