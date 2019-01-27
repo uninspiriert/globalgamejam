@@ -8,9 +8,15 @@ public class Lava : MonoBehaviour
 {
     public GameObject[] players;
 
-    private static int winCounter;
+    private static int boyWins;
+
+    private static int girlWins;
     
-    public GameObject ingameMenu;
+    public GameObject Menu;
+
+    public GameObject playAgain;
+
+    public GameObject quit;
 
     public GameObject girlText;
 
@@ -53,18 +59,19 @@ public class Lava : MonoBehaviour
 
     private IEnumerator EndOfLevel()
     {
-        if (SceneManager.GetActiveScene().buildIndex != 3)
-        {
-            ingameMenu.SetActive(true);
+        if (boyWins < 2 || girlWins < 2)
+        {   
+            Menu.SetActive(true);
             
             if (playerNumber == 1)
             {
                 girlText.SetActive(true);
+                girlWins++;
             }
             else
             {
                 boyText.SetActive(true);
-                winCounter++;
+                boyWins++;
             }
             
             yield return new WaitForSeconds(1.5f);
@@ -73,17 +80,21 @@ public class Lava : MonoBehaviour
         }
         else
         {
-            if (winCounter > 1)
-            {
-                boyText.SetActive(true);
-            }
-            else
+            Menu.SetActive(true);
+            
+            if (boyWins > 1)
             {
                 girlText.SetActive(true);
             }
-
-            winCounter = 0;
-            ingameMenu.SetActive(true);
+            else {
+                boyText.SetActive(true);
+            }
+            
+            playAgain.SetActive(true);
+            quit.SetActive(true);
+            
+            boyWins = 0;
+            girlWins = 0;
         }
     }
 }
