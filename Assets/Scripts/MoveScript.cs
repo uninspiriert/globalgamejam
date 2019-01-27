@@ -21,6 +21,10 @@ public class MoveScript : MonoBehaviour
 
     public bool punched;
 
+    public AudioClip drinkSound;
+
+    private AudioSource _audioSource;
+    
     private Rigidbody2D _rigidbody2D;
 
     private bool _facingRight = true;
@@ -48,6 +52,7 @@ public class MoveScript : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
 
         _horizontalInput = $"J{playerNumber}Horizontal";
         _jumpInput = $"J{playerNumber}Jump";
@@ -66,6 +71,7 @@ public class MoveScript : MonoBehaviour
         if (other.gameObject.name == "Coke of Agility")
         {
             Debug.Log("Zoom");
+            _audioSource.PlayOneShot(drinkSound);
             runSpeed = 60f;
         }
         else if (other.gameObject.name == "Item of Power")
