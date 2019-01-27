@@ -33,6 +33,8 @@ public class Lava : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (players.Length < 2) return;
+        
         GameObject removed = null;
         
         foreach (var player in _players)
